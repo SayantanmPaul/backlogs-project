@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.animation, .animation_layer {
+	height: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animation_layer {
+	background-position: bottom center;
+	background-repeat: repeat-x;
+  
+	width: 100%;
+	position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animation_layer.parallax {
+	position: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.artboard{
+  background-image: url('./Images/artboard.png');
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forest_1{
+  background-image: url('./Images/forest_1.png');
+}
+.forest_2{
+  background-image: url('./Images/forest_2.png');
+}
+.ground_1{
+  background-image: url('./Images/ground_1.png');
+}
+.ground_2{
+  background-image: url('./Images/ground_2.png');
+}
+.mountain_1{
+  background-image: url('./Images/mountain_1.png');
+}
+.mountain_2{
+  background-image: url('./Images/mountain_2.png');
+}
+.mountain_3{
+  background-image: url('./Images/mountain_3.png');
+}
+.traveller{
+  background-image: url('./Images/traveller.png');
+}
+.birds{
+  background-image: url('');
 }
