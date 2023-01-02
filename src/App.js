@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Navber from './navber';
+import Postcard from './postcard';
 import './App.css';
 
 function App(){
@@ -35,7 +36,7 @@ function App(){
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.}>
-        <div className=' w-100% h-0 pd '></div>
+        <div className='birds animation_layer parallax'> </div>
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.45}>
@@ -51,10 +52,13 @@ function App(){
         <div className='traveller bg-cover animation_layer parallaxer'> </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.35}>
+      <ParallaxLayer offset={0} speed={0.25}>
       <Navber/>
-
       </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={0.25}>
+      <Postcard/>
+      </ParallaxLayer>
+      
 
     </Parallax>
     

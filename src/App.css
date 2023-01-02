@@ -4,16 +4,18 @@
 
 .animation {
   display: block;
-	position: relative;
-	z-index: 10;
+	position: static;
+	z-index: -1;
 }
+
 
 .animation_layer {
 	background-position: bottom center;
+  background-size: auto 780px;
+  margin-top: -250px ;
 	background-repeat: repeat-x;
-  
 	width: 100%;
-	position: absolute;
+	position: relative;
 }
 
 .animation_layer.parallax {
@@ -47,6 +49,17 @@
 .traveller{
   background-image: url('./Images/traveller.png');
 }
-.birds{
-  background-image: url('');
+
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  /* Other styles go here */
+}
+
+#navbar.sticky {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* Other sticky styles go here */
 }
