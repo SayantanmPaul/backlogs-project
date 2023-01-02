@@ -1,25 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 .animation, .animation_layer {
-	height: 1000px;
+	height: 800px;
 }
 
 .animation {
+  width: 0;
+  height: 0;
   display: block;
-	position: static;
-	z-index: -1;
+	position: relative;
+	z-index: 1000;
+  background-size: cover;
+  overflow: hidden;
 }
-
+.blureffect{
+  content: '';
+  position: relative;
+  width: 100%;  
+  height: 280px;
+  background: linear-gradient(transparent, #fff);
+  z-index: 1000;
+  margin-top: 521.5px;
+  
+}
 
 .animation_layer {
 	background-position: bottom center;
-  background-size: auto 780px;
-  margin-top: -250px ;
 	background-repeat: repeat-x;
 	width: 100%;
-	position: relative;
+	
 }
 
 .animation_layer.parallax {
 	position: fixed;
+}
+
+@media (max-width: 767px){
+  .animation_layer {
+    background-position: bottom center;
+    background-size: auto 600px;
+    margin-top: -200px ;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: relative;
+  }
+  .blureffect{
+    content: '';
+    position: relative;
+    width: 100%;  
+    height: 280px;
+    background: linear-gradient(transparent, #fff);
+    z-index: 1000;
+    margin-top: 321px;
+    
+  }
 }
 
 .artboard{
@@ -50,6 +89,3 @@
   background-image: url('./Images/traveller.png');
 }
 
-* {
-  box-sizing: border-box;
-}

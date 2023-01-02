@@ -21,26 +21,57 @@ code {
 
 .scroller {
   height: 5.5em;
-  line-height: 1.2em;
+  line-height: .2em;
   position: relative;
-  overflow: hidden;
+  overflow:hidden;
   width: auto;
 }
 .scroller > span {
   position: absolute;
-  top: 0.7em;
+  top: 0em;
   animation: slide 5s infinite;
   font-weight: bold;
   
-}
+} 
 @keyframes slide {
   0% {
-    top: 0.7em;
+    top: 0em;
   }
   25% {
-    top: -1.7em;
+    top: -2.1em;
   }
   50% {
-    top: -3.7em;
+    top: -4.1em;
   }
+}
+
+@viewport {
+  width: 800px;
+  zoom: 0.9;
+  min-zoom: 0.85;
+  max-zoom: 2;
+  initial-scale: 1;
+  user-scalable: yes;
+}
+
+@media (max-width: 767px) {
+  .scroller {
+    height: 3.5em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+  }
+  @keyframes slide {
+    0% {
+      top: 0em;
+    }
+    25% {
+      top: -2.1em;
+    }
+    50% {
+      top: -4.1em;
+    }
+  }
+  
 }
