@@ -18,3 +18,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scroller {
+  height: 5.5em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+}
+.scroller > span {
+  position: absolute;
+  top: 0.7em;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0.7em;
+  }
+  25% {
+    top: -1.7em;
+  }
+  50% {
+    top: -3.7em;
+  }
+}

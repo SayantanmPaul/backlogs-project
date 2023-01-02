@@ -50,16 +50,6 @@
   background-image: url('./Images/traveller.png');
 }
 
-
-#navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #fff;
-  /* Other styles go here */
-}
-
-#navbar.sticky {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  /* Other sticky styles go here */
+* {
+  box-sizing: border-box;
 }
