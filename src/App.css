@@ -4,7 +4,10 @@
   margin: 0;
 }
 
-
+body{
+  font-family: 'Varela', sans-serif;
+}
+ 
 .animation, .animation_layer {
 	height: 800px;
 }
@@ -14,7 +17,7 @@
   height: 0;
   display: block;
 	position: relative;
-	z-index: 1000;
+	z-index: 10;
   background-size: cover;
   overflow: hidden;
 }
@@ -22,10 +25,10 @@
   content: '';
   position: relative;
   width: 100%;  
-  height: 280px;
+  height: 290px;
   background: linear-gradient(transparent, #fff);
-  z-index: 1000;
-  margin-top: 521.5px;
+  z-index: 10;
+  margin-top: 510.6px;
   
 }
 
@@ -43,8 +46,8 @@
 @media (max-width: 767px){
   .animation_layer {
     background-position: bottom center;
-    background-size: auto 600px;
-    margin-top: -200px ;
+    background-size: auto 700px;
+    margin-top: -100px ;
     background-repeat: repeat-x;
     width: 100%;
     position: relative;
@@ -53,10 +56,10 @@
     content: '';
     position: relative;
     width: 100%;  
-    height: 280px;
+    height: 180px;
     background: linear-gradient(transparent, #fff);
-    z-index: 1000;
-    margin-top: 321px;
+    z-index: 10;
+    margin-top: 521px;
     
   }
 }
@@ -89,3 +92,20 @@
   background-image: url('./Images/traveller.png');
 }
 
+@media (max-width: 767px){
+.blockcontain{
+  font-family:serif ;
+  line-height: 60px;
+}
+}
+.blockcontain{
+  font-family: 'Righteous', cursive;
+  line-height: 165px;
+}
+
+.satisfy{
+  font-family: 'Satisfy', cursive;
+}
+.Lexend{
+  font-family: 'Lexend Deca', sans-serif;
+}
