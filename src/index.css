@@ -58,7 +58,7 @@ code {
 
 @media (max-width: 767px) {
   .scroller {
-    height: 4.5em;
+    height: 12.5em;
     line-height: 1.2em;
     position: relative;
     overflow: hidden;
@@ -66,13 +66,13 @@ code {
   }
   @keyframes slide {
     0% {
-      top: 0em;
+      top: 1.2em;
     }
     25% {
-      top: -2.1em;
+      top: -7.2em;
     }
     50% {
-      top: -4.1em;
+      top: -12.5em;
     }
   }
 }

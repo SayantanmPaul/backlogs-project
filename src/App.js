@@ -1,11 +1,17 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import {FiChevronsDown} from 'react-icons/fi';
+import { useState, useEffect } from 'react';
 import Navber from './navber';
 import Postcard from './postcard';
 import './App.css';
 
 function App(){
+  const [animation, setAnimation] = useState('bounce 0.5s linear infinite');
 
+  useEffect(() => {
+    setAnimation('bounce 1s ease-in-out 3');
+  }, []);
   return (
   <div className='App'>
     
@@ -38,7 +44,7 @@ function App(){
       
       
       <ParallaxLayer offset={0} speed={0.5}>
-        <div className='mountain_3 bg-cover animation_layer parallax'> </div>
+        <div className='mountain_3 bg-[length:1800px_780px] animation_layer parallax'> </div>
       </ParallaxLayer>
 
       
@@ -69,11 +75,15 @@ function App(){
         <div className='blureffect'> </div>
       </ParallaxLayer>
 
+      <ParallaxLayer offset={0} speed={0.2}>
+        <div className='flex justify-center lg:pt-[700px] md:pt-[720px] pt-[610px]'><FiChevronsDown className='cursor-pointer' size={30} style={{ animation, color: '#227C70' }}/></div>
+      </ParallaxLayer>
+
       <ParallaxLayer offset={0} speed={0.25}>
       <Navber/>
       </ParallaxLayer>
-      
 
+      
       <ParallaxLayer offset={1} speed={0.25}>
       <Postcard/>
       </ParallaxLayer>
