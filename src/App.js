@@ -44,7 +44,7 @@ function App(){
       
       
       <ParallaxLayer offset={0} speed={0.5}>
-        <div className='mountain_3 bg-[length:1800px_780px] animation_layer parallax'> </div>
+        <div className='mountain_3 bg-[length:1790px_780px] animation_layer parallax'> </div>
       </ParallaxLayer>
 
       
@@ -56,11 +56,11 @@ function App(){
         <div className='ground_2 bg-cover animation_layer parallax'> </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.25}>
+      <ParallaxLayer offset={0} speed={0.35}>
       <div className='forest_1 bg-cover animation_layer parallax'> </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.25}>
+      <ParallaxLayer offset={0} speed={0.35}>
         <div className='forest_2 bg-cover animation_layer parallax'> </div>
       </ParallaxLayer>
 
