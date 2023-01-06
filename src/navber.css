@@ -17,7 +17,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(204, 204, 204);
+  color: white;
 }
 
 .nav {
@@ -57,9 +57,9 @@ a {
   }
   .nav__menu {
     position: fixed;
-    top: 7vh;
+    top: 0vh;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 70vw;
     background: rgb(0, 33, 65);
     opacity: 0.5;
@@ -68,7 +68,7 @@ a {
     transform: translateX(100%);
     transition: 0.5s ease-in;
   }
-  .nav__brand{}
+  
 }
 /* Active Class */
 .nav__active {
