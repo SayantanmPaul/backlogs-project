@@ -52,11 +52,11 @@ function App() {
           <div className="ground_1 bg-cover animation_layer parallax"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.15}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="ground_2 bg-cover animation_layer parallax"> </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.35}>
+        <ParallaxLayer offset={0} speed={0.3}>
           <div className="forest_1 bg-cover animation_layer parallax"> </div>
         </ParallaxLayer>
 
@@ -68,7 +68,7 @@ function App() {
           <div className="traveller bg-cover animation_layer parallaxer"> </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.15}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="blureffect"> </div>
         </ParallaxLayer>
 
@@ -82,13 +82,23 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.25}>
-          <Navber />
-        </ParallaxLayer>
+        <div className="mx-auto">
+          <ParallaxLayer offset={0} speed={0.25}>
+            <Navber />
+          </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.25}>
-          <Postcard />
-        </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0.25}>
+            <div className="flex justify-center">
+              <div className="max-w-7xl flex-1">
+                <div className="flex flex-col gap-3 md:gap-6 lg:ml-[6%] lg:mx-0 lg:mt-[70%] md:mt-[105%] mx-[20px] mt-[750px]  ">
+                  <Postcard />
+                  <Postcard />
+                  <Postcard />
+                </div>
+              </div>
+            </div>
+          </ParallaxLayer>
+        </div>
       </Parallax>
     </div>
   );

@@ -69,7 +69,7 @@ function Navbar() {
           <div className="line3"></div>
         </div>
       </nav>
-      <div className=" w-full h-[1.5px] bg-slate-200"></div>
+      <div className=" w-full h-[1.8px] bg-slate-200"></div>
     </>
   );
 }
