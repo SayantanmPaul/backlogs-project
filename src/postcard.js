@@ -3,6 +3,7 @@ import author from './Images/author.jpg';
 import unsplash1 from './Images/unsplash1.jpg';
 import './cssproperties/postcard.css';
 import { BsBookmarkPlus } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function Postcard() {
   return (
@@ -21,13 +22,15 @@ function Postcard() {
               Reyse Mark
             </div>
           </div>
-          <h1 className="font-[770] text-[22px] text-[#292929] leading-7 font-poppins heading">
-            You should have these extentions in your vs code 2023
-          </h1>
-          <div className="text-[#696969] hidden lg:block md:block heading">
-            So you want to make your boring vscode giveing your more
-            productivity, Don't worry I gotcha!
-          </div>
+          <Link hr>
+            <h1 className="font-[770] text-[22px] text-[#292929] leading-7 font-poppins heading">
+              You should have these extentions in your vs code 2023
+            </h1>
+            <div className="text-[#696969] hidden lg:block md:block heading">
+              So you want to make your boring vscode giveing your more
+              productivity, Don't worry I gotcha!
+            </div>
+          </Link>
           <div className="flex items-center justify-between text-[#787878]">
             <span className="my-2 text-[.8rem]">
               September 13 · 4 min read ·
