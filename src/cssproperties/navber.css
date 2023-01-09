@@ -26,7 +26,7 @@ a {
   justify-content: space-between;
   padding-right: 6%;
   padding-left: 8%;
-  height: 8vh;
+  height: 10vh;
   backdrop-filter: blur(30px);
 }
 .nav__brand {
